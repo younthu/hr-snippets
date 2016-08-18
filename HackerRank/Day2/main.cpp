@@ -15,10 +15,15 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    double meal;
-    int tipPercent;
-    int taxPercent;
-    cin >> meal >> tipPercent >> taxPercent;
-    cout << "The total meal cost is " << round(meal * (100 + tipPercent + taxPercent)/100.0) << " dollars." << endl;
+    int n;
+    int t;
+    long long s = 0;
+    cin >> n;
+    vector<int> arr(n);
+    for(int arr_i = 0;arr_i < n;arr_i++){
+        cin >> t;
+        s += t;
+    }
+    cout << s << endl;
     return 0;
 }
